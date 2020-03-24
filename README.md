@@ -19,7 +19,7 @@ Also, this virustotal public API has limits which is 4 requests/minute so that u
 * requirements.txt :requirements modules for building our app 
 * run_docker.sh:file to be able to get Docker running, locally 
 * upload_docker.sh: file to upload the image to docker Hub for Elastic Beanstalk 
-* Dockerrun.aws.json: used by Elastic Beanstalk to deploy on environment 
+* Dockerrun.aws.json: under the remote-docker directory, used by Elastic Beanstalk to deploy app to eb environment 
 
 ### How to Run
 
