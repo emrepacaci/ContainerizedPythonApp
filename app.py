@@ -1,4 +1,4 @@
-#!/bin pyhton3
+#!/bin pyhton
 import requests
 import redis
 import ast
