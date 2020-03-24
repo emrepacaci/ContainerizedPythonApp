@@ -1,0 +1,4 @@
+Bottle
+requests
+redis
+tabulate
