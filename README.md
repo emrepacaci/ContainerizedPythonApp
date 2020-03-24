@@ -1,4 +1,4 @@
-# DevOpsProject
+# Deployment and Building Containerized Python App
 
 In this project, we created a web site that allows users to upload hash file and generates a simple report using information provided by
 querying VirusTotal's public API. I have used Redis for caching so that When you user request same hashes, the side will provide report from cache rather than calling virustotal API again which makes our application fast.
@@ -6,8 +6,9 @@ Also, this virustotal public API has limits which is 4 requests/minute so that u
 
 **Used Technologies**
 
-* Python bottle web framework 
-* Redis  
+* Python Bottle web framework 
+* Redis for in-memory caching
+* Docker
 * AWS PaaS, Elastic Beanstalk environment for single containerized app. 
 
 
@@ -19,3 +20,13 @@ Also, this virustotal public API has limits which is 4 requests/minute so that u
 * run_docker.sh:file to be able to get Docker running, locally 
 * upload_docker.sh: file to upload the image to docker Hub for Elastic Beanstalk 
 * Dockerrun.aws.json: used by Elastic Beanstalk to deploy on environment 
+
+### How to Run
+
+To run this app in docker image locally, type terminal command:
+
+        ./run_docker.sh
+        
+After running this app locally, push it to Docker Hub, type terminal command:
+
+    ./upload_docker.sh
