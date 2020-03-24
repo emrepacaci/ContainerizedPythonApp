@@ -11,4 +11,4 @@ docker image ls
 
 # Step 3: 
 # Run Python app
-docker run -p 8000:60800 api
+docker run -p 8000:80 api
