@@ -1,7 +1,7 @@
 # Deployment and Building Containerized Python App
 
 In this project, we created a web site that allows users to upload hash file and generates a simple report using information provided by
-querying VirusTotal's public API. I have used Redis for caching so that When you user request same hashes, the side will provide report from cache rather than calling virustotal API again which makes our application fast.
+querying VirusTotal's public API. I have used Redis for caching so that when you user request same hashesa next time, the side will provide report from cache rather than calling virustotal API again which makes our application fast.
 Also, this virustotal public API has limits which is 4 requests/minute so that using local caching system is make sense in this case. This web app deployed both to AWS Elastic Beanstalk environment.
 
 **Used Technologies**
